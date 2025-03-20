@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & Notes App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Стили */
+        * {
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .input-section, .weather-section {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            resize: vertical;
+        }
+
+        button {
+            background: #4a90e2;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        #map {
+            height: 400px;
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 12px;
+        }
+
+        .weather-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <input type="text" id="title" placeholder="Введите заголовок...">
+            <textarea id="content" placeholder="Напишите ваш текст здесь..." rows="6"></textarea>
+            <button onclick="saveText()">Сохранить</button>
+        </div>
+
+        <div class="weather-section">
+            <div class="weather-info" id="weather">
+                <span>🌤️</span>
+                <div>
+                    <div id="temp">+24°C</div>
+                    <small id="desc">Загрузка...</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <script>
+        // Сохранение текста
+        async function saveText() {
+            const data = {
+                title: document.getElementById('title').value,
+                content: document.getElementById('content').value
+            };
+
+            try {
+                const response = await fetch('http://localhost:3000/api/save-text', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                alert(response.ok ? 'Данные сохранены!' : 'Ошибка сохранения');
+            } catch (error) {
+                alert('Ошибка соединения');
+            }
+        }
+
+        // Google Maps
+        function initMap() {
+            const map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 55.7558, lng: 37.6176 }, // Москва по умолчанию
+                zoom: 10
+            });
+        }
+
+        // Погода
+        async function loadWeather() {
+            const API_KEY = 'ВАШ_КЛЮЧ_OPENWEATHERMAP';
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=Moscow&units=metric&appid=${API_KEY}`;
+            
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                
+                document.getElementById('temp').textContent = `${Math.round(data.main.temp)}°C`;
+                document.getElementById('desc').textContent = data.weather[0].description;
+            } catch (error) {
+                console.error('Ошибка загрузки погоды:', error);
+            }
+        }
+
+        window.onload = () => {
+            loadWeather();
+            initMap();
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=ВАШ_КЛЮЧ_GOOGLE_MAPS&callback=initMap" async defer></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+body{
+	padding:5px;
+	background-color:#f2f4f5;
+	font-family:Verdana, sans-serif;
+}
+header {
+	height: 425px;
+	margin: 15px;
+	background: url(../imeges/bg_title.jpg) no-repeat;
+	border: 1px solid silver;
+}
+aside{
+	width:30%;
+	height:330px ;
+	float:left;
+	background-color:#fafcfc;
+	margin:15px;
+	border: 1px solid silver;
+}
+blockquote {
+	margin: 0;
+	background: #fafcfc;
+	color: #474C4F;
+	padding: 30px;
+	position: relative;
+	text-align: center;
+	font-family: Snell Roundhand;
+	font-style: italic
+}
+blockquote:before {
+	content: "\f10d";
+	font-family: FontAwesome;
+	position: absolute;
+	z-index: 2;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 14px;
+	color: #474C4F;
+	font-size: 20px;
+	background: #fafcfc;
+	padding: 0 15px;
+}
+blockquote:after {
+	content: "";
+	position: absolute;
+	left: 15px;
+	top: 20px;
+	right: 15px;
+	height: 4px;
+	border-top: 1px dotted #474C4F;
+	border-bottom: 1px dotted #474C4F;
+}
+blockquote p {
+	font-size: 15px;
+	letter-spacing: .05em;
+	line-height: 1.4;
+}
+blockquote cite {
+	font-style: normal;
+	font-weight: 300;
+}
+section {
+	width:60%;
+	float:right;
+	padding:15px;
+	border: 1px solid;
+	margin:15px;
+	border: 1px solid silver;
+}
+section .article{
+	margin:15px;
+}
+.clearboth{
+	 clear:both;
+}
+div #center{
+	width:100%;
+	padding:15px;
+	border: 1px solid;
+	margin:15px;
+}
+footer{
+	 height:200px;
+	 margin:15px;
+	 border: 1px solid silver;
+}
+footer ul{
+	margin:15px;
+}
+footer ul li {
+	padding:5px;
+}
+footer h6{
+	padding:5px;
+}
+a{
+	color: #434545;
+	text-decoration: none;
+}
+p a:hover, li a:hover{
+	color:#797d7d;
+	text-decoration: underline;
+}
+.topbutton {
+	width:100px;
+	border:2px solid #ccc;
+	background:#f7f7f7;
+	text-align:center;
+	padding:10px;
+	position:fixed;
+	bottom:50px;
+	right:100px;
+	cursor:pointer;
+	color:#333;
+	font-family:verdana;
+	font-size:12px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+nav{
+
+}
+.top-menu {
+  	background: rgba(255,255,255,.5);
+  	box-shadow: 3px 0 7px rgba(0,0,0,.3);
+  	padding: 20px;
+ 	position: absolute;
+  	text-align: center;
+}
+.menu-main li {
+	display: inline-block;
+}
+.menu-main a {
+  	text-decoration: none;
+ 	display: block;
+  	position: relative;
+  	line-height: 61px;
+  	padding-left: 20px;
+  	font-size: 18px;
+	letter-spacing: 2px;
+	font-family: 'Verdana', sans-serif;
+  	color: #677278;
+  	transition:.3s linear;
+}

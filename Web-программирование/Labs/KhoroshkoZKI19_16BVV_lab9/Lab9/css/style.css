@@ -1,0 +1,198 @@
+body{
+	padding:5px;
+	background-color:#f2f4f5;
+	font-family:Verdana, sans-serif;
+}
+body {
+    font: 20px "Montserrat", sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+}
+
+p {font-size: 16px;}
+
+header {
+	height: 425px;
+	margin: 15px;
+	/*background: url(../imeges/bg_title.jpg) no-repeat;*/
+}
+/* Карусель*/
+.carousel {
+  position: relative;
+  width: 1180px;
+  height: 425px;
+  background: #eee;
+}
+
+.carousel img {
+  width: 100%;
+  height: 425px;
+  /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 160px;
+  padding: 10px;
+  background: rgba(255,255,255,0.3);
+  
+  border: none;
+  font-size: 24px;
+  line-height: 24px;
+  color: #f5f6f7;
+  display: block;
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+.arrow:hover {
+  background: rgba(255,255,255,0.6);
+  cursor: pointer;
+}
+
+.prev {
+  left: 8px;
+}
+
+.next {
+  right: 8px;
+}
+
+.gallery {
+  width: 1180px;
+  overflow: hidden;
+}
+
+.gallery ul {
+	width: 9999px;
+  	height: 425px;
+  
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	transition: margin-left 250ms;
+	/* удаляем пустое пространство между элементами li, у которых установлен inline-block */
+	/* http://davidwalsh.name/remove-whitespace-inline-block */
+	font-size: 0;
+}
+.gallery li {
+  display: inline-block;
+}
+/****/            
+aside{
+	width:30%;
+	height:330px ;
+	float:left;
+	background-color:#fafcfc;
+	margin:15px;
+	border: 1px solid silver;
+}
+blockquote {
+	margin: 0;
+	background: #fafcfc;
+	color: #474C4F;
+	padding: 30px;
+	position: relative;
+	text-align: center;
+	font-family: Snell Roundhand;
+	font-style: italic
+}
+blockquote:after {
+	content: "";
+	position: absolute;
+	left: 15px;
+	top: 20px;
+	right: 15px;
+	height: 4px;
+	border-top: 1px dotted #474C4F;
+	border-bottom: 1px dotted #474C4F;
+}
+blockquote p {
+	font-size: 15px;
+	letter-spacing: .05em;
+	line-height: 1.4;
+}
+blockquote cite {
+	font-style: normal;
+	font-weight: 300;
+}
+footer{
+	 height:auto;
+	 margin:15px;
+	 border: 1px solid silver;
+}
+.footer{
+	 height:auto;
+	 margin:15px;
+	 border: 1px solid silver;
+}
+
+a{
+	color: #434545;
+	text-decoration: none;
+}
+p a:hover, li a:hover{
+	color:#797d7d;
+	text-decoration: underline;
+}
+.topbutton {
+	/*width:100px;
+	border:2px solid #ccc;
+	background:#f7f7f7;
+	text-align:center;
+	padding:10px;
+	*/position:fixed;
+	bottom:50px;
+	right:20px;
+	cursor:pointer;
+	/*color:#333;
+	font-family:verdana;
+	font-size:12px;
+	border-radius: 5px;*/
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.top-menu {
+  	background: rgba(255,255,255,.5);
+  	box-shadow: 3px 0 7px rgba(0,0,0,.3);
+  	padding: 20px;
+ 	position: absolute;
+  	text-align: center;
+}
+.menu-main li {
+	display: inline-block;
+}
+.menu-main a {
+  	text-decoration: none;
+ 	display: block;
+  	position: relative;
+  	line-height: 61px;
+  	padding-left: 20px;
+  	font-size: 18px;
+	letter-spacing: 2px;
+	font-family: 'Verdana', sans-serif;
+  	color: #3b3e40;
+  	transition:.3s linear;
+}
+.bg-3 { 
+    background-color: #ffffff;
+    color: #3b3e40;
+}
+.bg-4 {
+    background-color: #688e9b;  /* #aab5af;*/
+    color: #ffffff;
+}
+a .bg-4{
+	color: #ffffff;
+}
+
+.pad{
+	padding: 40px 20px;
+}
+.logo {
+    color: #3b3e40;
+}

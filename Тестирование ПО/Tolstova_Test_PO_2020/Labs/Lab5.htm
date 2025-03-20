@@ -1,0 +1,728 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";}
+h1
+	{mso-style-link:"Заголовок 1 Знак";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:35.45pt;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Arial","sans-serif";}
+h2
+	{mso-style-link:"Заголовок 2 Знак";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:35.45pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+h3
+	{mso-style-link:"Заголовок 3 Знак";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:35.45pt;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Нижний колонтитул Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-link:"Основной текст Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Текст выноски Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.1
+	{mso-style-name:"Заголовок 1 Знак";
+	mso-style-link:"Заголовок 1";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.2
+	{mso-style-name:"Заголовок 2 Знак";
+	mso-style-link:"Заголовок 2";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;}
+span.3
+	{mso-style-name:"Заголовок 3 Знак";
+	mso-style-link:"Заголовок 3";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.a
+	{mso-style-name:"Основной текст Знак";
+	mso-style-link:"Основной текст";
+	font-family:"Times New Roman","serif";}
+span.a0
+	{mso-style-name:"Нижний колонтитул Знак";
+	mso-style-link:"Нижний колонтитул";
+	font-family:"Times New Roman","serif";}
+span.a1
+	{mso-style-name:"Текст выноски Знак";
+	mso-style-link:"Текст выноски";
+	font-family:"Tahoma","sans-serif";}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=RU link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<h1 align=center style='text-align:center'>Лабораторная работа №<br>
+Функциональное тестирование через интерфейс</h1>
+
+<p class=MsoNormal style='text-indent:35.4pt'><b>Цель:</b> изучение основных
+принципов  функционального тестирования программного обеспечения через
+пользовательский интерфейс.</p>
+
+<p class=MsoNormal style='text-indent:35.4pt'>&nbsp;</p>
+
+<p class=MsoNormal>Функциональное тестирование через интерфейс (ручное
+тестирование) – это процесс поиска дефектов в работе программы, когда
+специалист по тестированию проверяет работоспособность всех компонентов
+программы, исполняя роль пользователя приложения. Часто, для точности проверки,
+специалист по тестированию использует заранее заготовленный план тестирования,
+в котором отмечены наиболее важные аспекты работы программы.</p>
+
+<p class=MsoNormal>Ручное тестирование – это ключевой этап разработки
+программного обеспечения. Специалист по тестированию может не придерживаться
+строго плану тестирования, а отклоняться от него для более полного
+тестирования, приближенного к использованию программы обычным пользователем.</p>
+
+<p class=MsoNormal style='text-indent:35.4pt'>&nbsp;</p>
+
+<p class=MsoNormal style='text-indent:35.4pt'>В качестве примера рассмотрим
+программу отправки заявки для технической поддержки.</p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><img
+width=301 height=356 id="Рисунок 1" src="Lab5.files/image001.png"></p>
+
+<p class=MsoNormal>В лабораторной №… “Функциональное тестирование” были созданы
+тестовые варианты, которые будут использоваться для тестирования приложения.</p>
+
+<p class=MsoNormal>Проведем первый тест, для этого запустим тестируемое
+приложение. Далее откроем таблицу тестовых сценариев, полученную в лабораторной
+и добавим новый столбец “Полученный результат”</p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=594
+ style='width:445.2pt;margin-left:34.55pt;border-collapse:collapse;border:none'>
+ <tr style='height:17.95pt'>
+  <td width=62 valign=top style='width:46.85pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><a name="OLE_LINK8"></a><a
+  name="OLE_LINK7"></a><a name="OLE_LINK6"><b><span style='font-size:12.0pt'>Номер</span></b></a></p>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>теста</span></b></p>
+  </td>
+  <td width=96 valign=top style='width:72.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Описание</span></b></p>
+  </td>
+  <td width=95 valign=top style='width:70.9pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Шаги
+  теста</span></b></p>
+  </td>
+  <td width=104 valign=top style='width:77.95pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Тестовые
+  варианты</span></b></p>
+  </td>
+  <td width=132 valign=top style='width:99.25pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Ожидаемые
+  результаты</span></b></p>
+  </td>
+  <td width=104 valign=top style='width:77.95pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span lang=EN-US
+  style='font-size:12.0pt'>Полученный результат</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:26.05pt'>
+  <td width=62 valign=top style='width:46.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:8.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=96 valign=top style='width:72.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:8.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=95 valign=top style='width:70.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:8.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=104 valign=top style='width:77.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:8.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=132 valign=top style='width:99.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:8.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=104 valign=top style='width:77.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:8.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='margin-left:53.45pt;text-indent:0cm'>&nbsp;</p>
+
+<p class=MsoNormal>Следующим шагом начнем тестирование первого тестового
+сценария, который подразумевает ввод корректных данных во все поля формы. </p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=594
+ style='width:445.2pt;margin-left:34.55pt;border-collapse:collapse;border:none'>
+ <tr style='height:17.95pt'>
+  <td width=62 valign=top style='width:46.85pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><a name="OLE_LINK13"></a><a
+  name="OLE_LINK12"></a><a name="OLE_LINK11"><b><span style='font-size:12.0pt'>Номер</span></b></a></p>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>теста</span></b></p>
+  </td>
+  <td width=96 valign=top style='width:72.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Описание</span></b></p>
+  </td>
+  <td width=95 valign=top style='width:70.9pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Шаги
+  теста</span></b></p>
+  </td>
+  <td width=104 valign=top style='width:77.95pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Тестовые
+  варианты</span></b></p>
+  </td>
+  <td width=119 valign=top style='width:89.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Ожидаемые
+  результаты</span></b></p>
+  </td>
+  <td width=117 valign=top style='width:87.9pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span lang=EN-US
+  style='font-size:12.0pt'>Полученный результат</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:26.05pt'>
+  <td width=62 valign=top style='width:46.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span lang=EN-US style='font-size:
+  10.0pt'>1</span></p>
+  </td>
+  <td width=96 valign=top style='width:72.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span lang=EN-US style='font-size:
+  10.0pt'>Ввод корректных данных</span></p>
+  </td>
+  <td width=95 valign=top style='width:70.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>Ввод
+  ФИО</span></p>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>Ввод
+  даты рождения</span></p>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>Ввод
+  телефона</span></p>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>Ввод
+  e-mail</span></p>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>Ввод
+  заявки</span></p>
+  </td>
+  <td width=104 valign=top style='width:77.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>Иванов
+  Иван Иванович</span></p>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>12.05.1978</span></p>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>+7
+  (012)-345-67-89</span></p>
+  <p class=MsoNormal style='text-indent:0cm'><a name="OLE_LINK2"></a><a
+  name="OLE_LINK1"></a><a href="mailto:Mail_123@mail.ru"><span
+  style='font-size:10.0pt'>Mail_123@mail.ru</span></a></p>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>«Заявка
+  на заправку картриджа для принтера»</span></p>
+  </td>
+  <td width=119 valign=top style='width:89.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><a name="OLE_LINK10"></a><a
+  name="OLE_LINK9"><span style='font-size:10.0pt'>Сообщение об успешной
+  отправке данных на сервере, данные присутствуют в базе без изменений</span></a></p>
+  </td>
+  <td width=117 valign=top style='width:87.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>Сообщение
+  об успешной отправке данных на сервере, данные присутствуют в базе без
+  изменений</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-indent:0cm'>&nbsp;</p>
+
+<p class=MsoNormal style='text-indent:35.4pt'>Сперва заполняем форму согласно
+тестовому сценарию.</p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><img
+border=0 width=304 height=357 id="Рисунок 2" src="Lab5.files/image002.png"></p>
+
+<p class=MsoNormal style='text-indent:35.4pt'>После заполнения нажимаем кнопку
+подтверждения подачи заявки и получаем следующее диалоговое окно.</p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><img
+border=0 width=230 height=163 id="Рисунок 3" src="Lab5.files/image003.png"></p>
+
+<p class=MsoNormal style='text-indent:0cm'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:35.4pt'>После осуществления ввода данных произошла
+отправка данных на сервер. Необходима проверка данных на сервер, чтобы
+убедится, что данные дошли в полном объеме и без искажений. Если все прошло
+так, как ожидалось в тестовом сценарии, то позитивный тест пройден. Добавим к
+таблице еще один столбец «Статус теста», в который допишем, состояние теста
+«пройден».</p>
+
+<p class=MsoNormal style='text-indent:0cm'><a name="OLE_LINK21"></a><a
+name="OLE_LINK20">         После прохождения первого теста переходим к
+следующему.</a></p>
+
+<p class=MsoNormal style='text-indent:0cm'>         </p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=594
+ style='width:445.2pt;margin-left:34.55pt;border-collapse:collapse;border:none'>
+ <tr style='height:17.95pt'>
+  <td width=62 valign=top style='width:46.85pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Номер</span></b></p>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>теста</span></b></p>
+  </td>
+  <td width=96 valign=top style='width:72.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Описание</span></b></p>
+  </td>
+  <td width=95 valign=top style='width:70.9pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Шаги
+  теста</span></b></p>
+  </td>
+  <td width=104 valign=top style='width:77.95pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Тестовые
+  варианты</span></b></p>
+  </td>
+  <td width=119 valign=top style='width:89.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Ожидаемые
+  результаты</span></b></p>
+  </td>
+  <td width=117 valign=top style='width:87.9pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span lang=EN-US
+  style='font-size:12.0pt'>Полученный результат</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:26.05pt'>
+  <td width=62 valign=top style='width:46.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>2</span></p>
+  </td>
+  <td width=96 valign=top style='width:72.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>Ввод
+  данных, кроме ФИО</span></p>
+  </td>
+  <td width=95 valign=top style='width:70.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>Ввод
+  даты рождения</span></p>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>Ввод
+  телефона</span></p>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>Ввод
+  e-mail</span></p>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>Ввод
+  заявки</span></p>
+  </td>
+  <td width=104 valign=top style='width:77.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>-</span></p>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>12.05.1987</span></p>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>+7
+  (012)-345-67-89</span></p>
+  <p class=MsoNormal style='text-indent:0cm'><a href="mailto:Mail_123@mail.ru"><span
+  style='font-size:10.0pt'>Mail_123@mail.ru</span></a></p>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>«<a
+  name="OLE_LINK4"></a><a name="OLE_LINK3">Заявка на заправку картриджа для
+  принтера</a>»</span></p>
+  </td>
+  <td width=119 valign=top style='width:89.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><a name="OLE_LINK19"></a><a
+  name="OLE_LINK18"></a><a name="OLE_LINK17"><span style='font-size:10.0pt'>Сообщение
+  об отсутствии ФИО, отсутствие отправки данных</span></a></p>
+  </td>
+  <td width=117 valign=top style='width:87.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>Сообщение
+  об отсутствии ФИО, отсутствие отправки данных</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-indent:0cm'>         Аналогично первому тесту
+вводим данные, за исключение поля ФИО.</p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><img
+border=0 width=306 height=361 id="Рисунок 4" src="Lab5.files/image004.png"></p>
+
+<p class=MsoNormal style='text-indent:35.4pt'>После нажатия кнопки подать
+заявку появляется следующее диалоговое окно.</p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><img
+border=0 width=165 height=167 id="Рисунок 6" src="Lab5.files/image005.png"></p>
+
+<p class=MsoNormal style='text-indent:0cm'>         В данном случае не было указано
+ФИО. В результате выполнения программы появилось сообщение об отсутствующем ФИО,
+а данные не были переданы на сервер. На данном этапе протестирован негативный
+тест. Тест считается пройденным.</p>
+
+<p class=MsoNormal style='text-indent:0cm'><a name="OLE_LINK25"></a><a
+name="OLE_LINK24">         После прохождения второго теста переходим к третьему.</a></p>
+
+<p class=MsoNormal style='text-indent:0cm'>         </p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=594
+ style='width:445.2pt;margin-left:34.55pt;border-collapse:collapse;border:none'>
+ <tr style='height:17.95pt'>
+  <td width=62 valign=top style='width:46.85pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><a name="OLE_LINK23"></a><a
+  name="OLE_LINK22"><b><span style='font-size:12.0pt'>Номер</span></b></a></p>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>теста</span></b></p>
+  </td>
+  <td width=96 valign=top style='width:72.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Описание</span></b></p>
+  </td>
+  <td width=95 valign=top style='width:70.9pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Шаги
+  теста</span></b></p>
+  </td>
+  <td width=104 valign=top style='width:77.95pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Тестовые
+  варианты</span></b></p>
+  </td>
+  <td width=119 valign=top style='width:89.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Ожидаемые
+  результаты</span></b></p>
+  </td>
+  <td width=117 valign=top style='width:87.9pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span lang=EN-US
+  style='font-size:12.0pt'>Полученный результат</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:26.05pt'>
+  <td width=62 valign=top style='width:46.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>3</span></p>
+  </td>
+  <td width=96 valign=top style='width:72.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>Ввод
+  данных, кроме заявки</span></p>
+  </td>
+  <td width=95 valign=top style='width:70.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>Ввод
+  ФИО</span></p>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>Ввод
+  даты рождения</span></p>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>Ввод
+  телефона</span></p>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>Ввод
+  e-mail</span></p>
+  </td>
+  <td width=104 valign=top style='width:77.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>Иванов
+  Иван Иванович</span></p>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>12.05.1987</span></p>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>+7
+  (012)-345-67-89</span></p>
+  <p class=MsoNormal style='text-indent:0cm'><a href="mailto:Mail_123@mail.ru"><span
+  style='font-size:10.0pt'>Mail_123@mail.ru</span></a></p>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>«-»</span></p>
+  </td>
+  <td width=119 valign=top style='width:89.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>Сообщение
+  об отсутствии текста заявки, отсутствие отправки данных</span></p>
+  </td>
+  <td width=117 valign=top style='width:87.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>Сообщение
+  об отсутствии заявки и сообщение об отправки данных на сервер.</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-indent:0cm'>         Сшелующим шагом выполняем
+третий тест, для этого введем тестовый сценарий, предполагающий негативное
+тестирование, при котором не будет указан текст заказа.</p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><img
+border=0 width=302 height=357 id="Рисунок 5" src="Lab5.files/image006.png"></p>
+
+<p class=MsoNormal style='text-indent:0cm'><span lang=EN-US>         </span>После
+нажатия кнопки “Подать заявку” появляется диалоговое окно, собщающее о том, что
+нет текста заявки.</p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><img
+border=0 width=213 height=166 id="Рисунок 7" src="Lab5.files/image007.png"></p>
+
+<p class=MsoNormal style='text-indent:0cm'><span lang=EN-US>         </span>Но
+после его закрытия появляется сообщение о том, что были переданы данные на сервер,
+что свидетельствует о том, что появилась новая пустая заявка, чего быть не
+должно.</p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><img
+border=0 width=230 height=163 id="Рисунок 8" src="Lab5.files/image003.png"></p>
+
+<p class=MsoNormal style='text-indent:0cm'>         В данном случае тест
+считается не пройденным, так как один из двух полученных результатов оказался
+несоответствующим ожидаемым результатам. В ходе выполнения программы, формируется
+пустая заявка.  Необходима доработка запрета отправки некорректных данных.</p>
+
+<p class=MsoNormal style='text-indent:0cm'>&nbsp;</p>
+
+<p class=MsoNormal style='text-indent:0cm'>         При последующем
+тестировании аналогично вводятся данные из тестового варианта, после чего
+сравнивается ожидаемый результат с полученным результатом.</p>
+
+<p class=MsoNormal align=left style='margin-bottom:10.0pt;text-align:left;
+text-indent:0cm;line-height:115%'>&nbsp;</p>
+
+<h1>Самостоятельное задание</h1>
+
+<p class=MsoBodyText style='margin-left:0cm'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>На основе тестового приложения и таблицы тестовых сценариев из
+лабораторной «Функциональное тестирование» провести тестирование приложения.</p>
+
+<p class=MsoBodyText style='margin-left:0cm'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Заполнить отчет.</p>
+
+<h1 align=center style='text-align:center'>Требования к отчету о функциональном
+тестировании через интерфейс</h1>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Указание
+название и функций тестируемого приложения.</p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Снимок
+интерфейса приложения.</p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Заполненная
+таблица для тестовых сценариев на основе отчета из лабораторной №…
+Функциональное тестирование.</p>
+
+<p class=MsoNormal><b><span style='font-size:11.0pt'>&nbsp;</span></b></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=645
+ style='width:483.7pt;margin-left:34.55pt;border-collapse:collapse;border:none'>
+ <tr style='height:17.95pt'>
+  <td width=62 valign=top style='width:46.85pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Номер</span></b></p>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>теста</span></b></p>
+  </td>
+  <td width=99 valign=top style='width:74.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Описание</span></b></p>
+  </td>
+  <td width=70 valign=top style='width:52.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Шаги
+  теста</span></b></p>
+  </td>
+  <td width=104 valign=top style='width:77.95pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Тестовые
+  варианты</span></b></p>
+  </td>
+  <td width=119 valign=top style='width:89.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Ожидаемые
+  результаты</span></b></p>
+  </td>
+  <td width=117 valign=top style='width:87.9pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span lang=EN-US
+  style='font-size:12.0pt'>Полученный результат</span></b></p>
+  </td>
+  <td width=74 valign=top style='width:55.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Статус</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:26.05pt'>
+  <td width=62 valign=top style='width:46.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=99 valign=top style='width:74.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=70 valign=top style='width:52.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=104 valign=top style='width:77.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=119 valign=top style='width:89.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=117 valign=top style='width:87.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=74 valign=top style='width:55.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:10.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='text-indent:0cm'>Вывод:__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+
+</div>
+
+</body>
+
+</html>

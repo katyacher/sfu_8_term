@@ -1,0 +1,432 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<title>Лабораторная работа №1</title>
+
+</head>
+
+<body lang=RU>
+
+<div>
+
+<h1 align=center>Лабораторная работа №<br>
+Функциональное тестирование </h1>
+
+<p><b>Цель:</b> изучение основных
+принципов  функционального тестирования программного обеспечения, а также изучение
+методов анализа классов эквивалентности и анализа граничных значений и таблиц
+решений, создание тестового сценария.</p>
+
+<h2>Функциональное тестирование</h2>
+
+<p><i>Функциональное тестирование</i>
+объекта-тестирования планируется и проводится на основе требований к
+тестированию, заданных на этапе определения требований. Цель функциональных
+тестов состоит в том, чтобы проверить соответствие приложения установленным
+требованиям. </p>
+
+<p>В качестве примера рассмотрим
+программу отправки заявки для технической поддержки.</p>
+
+<p align=center ><img width=301 height=356 id="Рисунок 1" src="Lab3.files/image001.jpg"></p>
+
+<h3>Разбиение на классы эквивалентности</h3>
+
+<p>Одними из ключевых понятий теории тестирования являются
+классы эквивалентности и граничные условия. Разбиение на классы эквивалентности
+представляет собой технологию проектирования тестов, ориентированную на
+снижение общего числа тестов, необходимых для подтверждения корректности
+функциональных возможностей программы.</p>
+
+<p><i>Класс эквивалентности</i> – набор тестовых данных с
+общими свойствами. Обрабатывая разные элементы класса, программа ведет себя
+одинаково. Если один из тестов выявит ошибку, остальные, скорее всего, тоже это
+сделают и наоборот. </p>
+
+<p>Класс эквивалентности может задавать набор допустимых или
+недопустимых значений. Нельзя забывать о классах, охватывающих заведомо
+неверные или недопустимые входные данные.</p>
+
+<p>В данном случае значения между собой не зависимы, и можно
+провести тестирование значений полей параллельно, сократив количество тестов.
+Составим классы эквивалентности для каждого поля.</p>
+
+<p>1. Поле ФИО</p>
+
+<p class=MsoNormal style='margin-left:89.45pt;text-indent:-18.0pt'>a.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Ввод трех
+слов</p>
+
+<p class=MsoNormal style='margin-left:89.45pt;text-indent:-18.0pt'>b.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Ввод менее
+трех слов</p>
+
+<p class=MsoNormal style='margin-left:89.45pt;text-indent:-18.0pt'>c.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Ввод
+более трех слов</p>
+
+<p class=MsoNormal style='margin-left:89.45pt;text-indent:-18.0pt'>d.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Ввод
+знаков препинаний</p>
+
+<p class=MsoNormal style='margin-left:89.45pt;text-indent:-18.0pt'>e.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Ввод
+английских символов</p>
+
+<p class=MsoNormal style='margin-left:89.45pt;text-indent:-18.0pt'>f.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Ввод
+цифр</p>
+
+<p class=MsoNormal style='margin-left:53.45pt;text-indent:-18.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Дата
+рождения</p>
+
+<p class=MsoNormal style='margin-left:89.45pt;text-indent:-18.0pt'>a.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Ввод
+обычной даты</p>
+
+<p class=MsoNormal style='margin-left:89.45pt;text-indent:-18.0pt'>b.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Ввод даты
+меньше текущей на срок более 100 лет</p>
+
+<p class=MsoNormal style='margin-left:89.45pt;text-indent:-18.0pt'>c.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Ввод
+даты текущего дня</p>
+
+<p class=MsoNormal style='margin-left:89.45pt;text-indent:-18.0pt'>d.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Ввод даты
+из будущего</p>
+
+<p class=MsoNormal style='margin-left:89.45pt;text-indent:-18.0pt'>e.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Ввод
+даты меньше текущей на 18 лет и менее.</p>
+
+<p class=MsoNormal style='margin-left:53.45pt;text-indent:-18.0pt'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Телефон</p>
+
+<p class=MsoNormal style='margin-left:89.45pt;text-indent:-18.0pt'>a.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Ввод
+нормального номера</p>
+
+<p class=MsoNormal style='margin-left:89.45pt;text-indent:-18.0pt'>b.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Ввод не
+числовых символов</p>
+
+<p class=MsoNormal style='margin-left:89.45pt;text-indent:-18.0pt'>c.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Ввод
+номера превышающего 11 символов</p>
+
+<p class=MsoNormal style='margin-left:89.45pt;text-indent:-18.0pt'>d.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Ввод
+номера меньше 11 символов</p>
+
+<p class=MsoNormal style='margin-left:53.45pt;text-indent:-18.0pt'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+lang=EN-US>E-mail</span></p>
+
+<p class=MsoNormal style='margin-left:89.45pt;text-indent:-18.0pt'>a.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Ввод
+нормального адреса</p>
+
+<p class=MsoNormal style='margin-left:89.45pt;text-indent:-18.0pt'>b.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Ввод адреса
+без какой либо части</p>
+
+<p class=MsoNormal style='margin-left:89.45pt;text-indent:-18.0pt'>c.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Ввод
+адреса с дополнительными доменами</p>
+
+<p class=MsoNormal style='margin-left:89.45pt;text-indent:-18.0pt'>d.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Ввод
+адреса с некорректными символами</p>
+
+<p class=MsoNormal style='margin-left:53.45pt;text-indent:-18.0pt'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Текстовое
+поле</p>
+
+<p class=MsoNormal style='margin-left:89.45pt;text-indent:-18.0pt'>a.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Ввод любых
+символов в любом количестве, так как не оговорено их количество.</p>
+
+<p class=MsoNormal style='margin-left:35.4pt;text-indent:0cm'>&nbsp;</p>
+
+<p class=MsoNormal>В сумме получилось 20 классов эквивалентности, но так как
+тестирование будет проводится параллельно из-за независимости классов
+эквивалентов для разных элементов, общее количество тестов можно сократить до
+6, что соответствует самому большому количеству классовых эквивалентов для
+одного элемента.</p>
+
+<h3>Анализ граничных значений</h3>
+
+<p class=MsoBodyText><span style='color:black;letter-spacing:-.05pt'>Анализ
+граничных значений представляет собой технологию проектирования тестов, которая
+является дополнением разбиения на классы эквивалентности. <i>Анализ граничных
+значений </i>заключается в тестировании каждой границы класса эквивалентности,
+причем с обеих сторон. Программа, которая пройдет эти тесты, скорее всего,
+пройдет и все остальные, относящиеся к данному классу.</span></p>
+
+<p class=MsoNormal style='text-indent:35.4pt'><span style='color:black;
+letter-spacing:-.05pt'>Правила анализа граничных условий.</span></p>
+
+<p class=MsoNormal style='text-indent:35.4pt'><span style='color:black;
+letter-spacing:-.05pt'>1. Если условие ввода задает диапазон значений, то
+тестируется</span></p>
+
+<p class=MsoBodyText style='margin-left:71.45pt;text-indent:-18.0pt'><span
+style='font-family:Symbol;color:black;letter-spacing:-.05pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:black;letter-spacing:-.05pt'>минимальное и
+максимальное значение диапазона.</span></p>
+
+<p class=MsoBodyText style='margin-left:71.45pt;text-indent:-18.0pt'><span
+style='font-family:Symbol;color:black;letter-spacing:-.05pt'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:black;letter-spacing:-.05pt'>значения чуть
+меньше минимума и чуть больше максимума.</span></p>
+
+<p class=MsoBodyText>2. Если входные или выходные данные являются
+упорядоченными множествами, то тестируется обработка первого и последнего
+элементов этих множеств.</p>
+
+<p class=MsoBodyText>&nbsp;</p>
+
+<p class=MsoBodyText>Программа должна иметь ограничения по возрасту, для
+избежания проблем с целостностью информации. Для данного приложения стоит
+ввести следующие ограничения:</p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-indent:-18.0pt'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Дата рождения не
+может быть текущим днем;</p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-indent:-18.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Дата рождения не
+может быть днем из будущего;</p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-indent:-18.0pt'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Возраст
+подающего заявку должен быть больше 18 лет;</p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-indent:-18.0pt'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Возраст
+подающего заявку не должен быть больше 100 лет.</p>
+
+<p class=MsoBodyText style='text-indent:0cm'>&nbsp;</p>
+
+<h3>Документирование тестовых сценариев</h3>
+
+<p class=MsoBodyText><i><span style='color:black;letter-spacing:-.2pt'>Тестовый
+сценарий</span></i><span style='color:black;letter-spacing:-.2pt'> (</span><span
+lang=EN-US style='color:black;letter-spacing:-.2pt'>test</span><span
+lang=EN-US style='color:black;letter-spacing:-.2pt'> </span><span lang=EN-US
+style='color:black;letter-spacing:-.2pt'>case</span><span style='color:black;
+letter-spacing:-.2pt'>) – это описание входной информации, условий и
+последовательности выполнения действий, а также ожидаемого выходного результата.
+</span></p>
+
+<p class=MsoBodyText>Тестовый сценарий должен обладать следующими свойствами:</p>
+
+<p class=MsoBodyText style='margin-left:71.45pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>высокая вероятность обнаружения дефектов</p>
+
+<p class=MsoBodyText style='margin-left:71.45pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>воспроизводимость</p>
+
+<p class=MsoBodyText style='margin-left:71.45pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>наличие четко определенных ожидаемых результатов и критериев
+успешного или неуспешного выполнения теста</p>
+
+<p class=MsoBodyText style='margin-left:71.45pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>неизбыточность.</p>
+
+<p class=MsoBodyText style='text-indent:0cm'>&nbsp;</p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=625
+ style='width:468.6pt;margin-left:-33.65pt;border-collapse:collapse;border:
+ none'>
+ <tr style='height:17.95pt'>
+  <td width=67 valign=top style='width:50.1pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Номер</span></b></p>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>теста</span></b></p>
+  </td>
+  <td width=142 valign=top style='width:106.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Описание</span></b></p>
+  </td>
+  <td width=132 valign=top style='width:99.2pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Шаги
+  теста</span></b></p>
+  </td>
+  <td width=164 valign=top style='width:123.05pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Тестовые
+  варианты</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:89.95pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Ожидаемые
+  результаты</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:26.05pt'>
+  <td width=67 valign=top style='width:50.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:0cm'><span
+  style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td width=142 valign=top style='width:106.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:0cm'><span
+  style='font-size:10.0pt'>Тестирование функциональности добавления одной
+  записи</span></p>
+  </td>
+  <td width=132 valign=top style='width:99.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:0cm'><span
+  style='font-size:10.0pt'>Ввести информацию о компании и сохранить</span></p>
+  </td>
+  <td width=164 valign=top style='width:123.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:0cm'><span
+  style='font-size:10.0pt'>Название компании, адрес, ФИО директора, тефелон, </span><span
+  lang=EN-US style='font-size:10.0pt'>e</span><span style='font-size:10.0pt'>-</span><span
+  lang=EN-US style='font-size:10.0pt'>mail</span><span style='font-size:10.0pt'>
+  </span></p>
+  </td>
+  <td width=120 valign=top style='width:89.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:0cm'><span
+  style='font-size:10.0pt'>Информация о компании должна быть сохранена
+  корректно</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<h3 style='text-indent:0cm'>&nbsp;</h3>
+
+<h3 style='text-indent:0cm'>Самостоятельное задание</h3>
+
+<p class=MsoBodyText style='margin-left:0cm'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>На основе тестового приложения, составить тестовые наборы для
+функционального тестирования. Написать тестовые сценарии тестирования одной из
+функций выбранного приложения. </p>
+
+<p class=MsoBodyText style='margin-left:0cm'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Определить классы эквивалентности и соответсвующий набор входных
+тестовых данных.</p>
+
+<p class=MsoBodyText style='margin-left:0cm'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Заполнить отчет.</p>
+
+<h1 align=center style='text-align:center'>Требования к отчету о структурном
+тестировании</h1>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Указание
+название и функций тестируемого приложения.</p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Снимок
+интерфейса приложения.</p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Описание классов
+эквивалентности для приложения</p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Анализ граничных
+значений</p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Заполненная
+таблица для тестовых сценариев.</p>
+
+<p class=MsoNormal><b><span style='font-size:11.0pt'>&nbsp;</span></b></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=625
+ style='width:468.6pt;margin-left:-33.65pt;border-collapse:collapse;border:
+ none'>
+ <tr style='height:17.95pt'>
+  <td width=94 valign=top style='width:70.6pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Номер</span></b></p>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>теста</span></b></p>
+  </td>
+  <td width=114 valign=top style='width:85.8pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Описание</span></b></p>
+  </td>
+  <td width=132 valign=top style='width:99.2pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Шаги
+  теста</span></b></p>
+  </td>
+  <td width=164 valign=top style='width:123.05pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Тестовые
+  варианты</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:89.95pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt'>
+  <p class=MsoNormal style='text-indent:0cm'><b><span style='font-size:12.0pt'>Ожидаемые
+  результаты</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:26.05pt'>
+  <td width=94 valign=top style='width:70.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:8.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=114 valign=top style='width:85.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:8.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=132 valign=top style='width:99.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:8.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=164 valign=top style='width:123.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:8.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:89.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal style='text-indent:0cm'><span style='font-size:8.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='text-indent:0cm'>Вывод:__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+
+<p class=MsoBodyText style='text-indent:0cm'><span lang=EN-US>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

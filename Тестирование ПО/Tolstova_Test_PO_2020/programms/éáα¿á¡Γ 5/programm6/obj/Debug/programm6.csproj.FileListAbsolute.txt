@@ -1,0 +1,18 @@
+D:\Users\Sergey\Desktop\для Глазырина С\Практические\Файлы для реализации на C#\C#\programm6\programm6\bin\Debug\programm6.exe.config
+D:\Users\Sergey\Desktop\для Глазырина С\Практические\Файлы для реализации на C#\C#\programm6\programm6\bin\Debug\programm6.exe
+D:\Users\Sergey\Desktop\для Глазырина С\Практические\Файлы для реализации на C#\C#\programm6\programm6\bin\Debug\programm6.pdb
+D:\Users\Sergey\Desktop\для Глазырина С\Практические\Файлы для реализации на C#\C#\programm6\programm6\obj\Debug\programm6.csprojResolveAssemblyReference.cache
+D:\Users\Sergey\Desktop\для Глазырина С\Практические\Файлы для реализации на C#\C#\programm6\programm6\obj\Debug\programm6.Form1.resources
+D:\Users\Sergey\Desktop\для Глазырина С\Практические\Файлы для реализации на C#\C#\programm6\programm6\obj\Debug\programm6.Properties.Resources.resources
+D:\Users\Sergey\Desktop\для Глазырина С\Практические\Файлы для реализации на C#\C#\programm6\programm6\obj\Debug\programm6.csproj.GenerateResource.Cache
+D:\Users\Sergey\Desktop\для Глазырина С\Практические\Файлы для реализации на C#\C#\programm6\programm6\obj\Debug\programm6.exe
+D:\Users\Sergey\Desktop\для Глазырина С\Практические\Файлы для реализации на C#\C#\programm6\programm6\obj\Debug\programm6.pdb
+C:\Users\Sergey\Desktop\Дипломный продукт\programms\programm6\programm6\bin\Debug\programm6.exe.config
+C:\Users\Sergey\Desktop\Дипломный продукт\programms\programm6\programm6\obj\Debug\programm6.exe
+C:\Users\Sergey\Desktop\Дипломный продукт\programms\programm6\programm6\obj\Debug\programm6.pdb
+C:\Users\Sergey\Desktop\Дипломный продукт\programms\programm6\programm6\bin\Debug\programm6.exe
+C:\Users\Sergey\Desktop\Дипломный продукт\programms\programm6\programm6\bin\Debug\programm6.pdb
+C:\Users\Sergey\Desktop\Дипломный продукт\programms\programm6\programm6\obj\Debug\programm6.csprojResolveAssemblyReference.cache
+C:\Users\Sergey\Desktop\Дипломный продукт\programms\programm6\programm6\obj\Debug\programm6.Form1.resources
+C:\Users\Sergey\Desktop\Дипломный продукт\programms\programm6\programm6\obj\Debug\programm6.Properties.Resources.resources
+C:\Users\Sergey\Desktop\Дипломный продукт\programms\programm6\programm6\obj\Debug\programm6.csproj.GenerateResource.Cache

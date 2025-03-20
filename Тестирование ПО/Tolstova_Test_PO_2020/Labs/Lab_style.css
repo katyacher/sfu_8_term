@@ -1,0 +1,29 @@
+h {
+    margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-indent:35.45pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;
+}
+
+h1
+	{font-size:20.0pt;}
+h2
+	{font-size:15.0pt;}
+h3
+	{font-size:13.5pt;}
+
+
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:35.45pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+
+}
+
+img {align-content:center;
+}

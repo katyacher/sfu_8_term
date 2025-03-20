@@ -1,0 +1,529 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<title>Занятие 2</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";}
+h1
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:35.45pt;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:14.2pt;
+	line-height:150%;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	line-height:150%;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:11.9pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	line-height:150%;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	text-indent:35.45pt;
+	font-size:8.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListNumber, li.MsoListNumber, div.MsoListNumber
+	{margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:14.2pt;
+	text-align:justify;
+	text-indent:-14.2pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Название Знак";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:center;
+	text-indent:35.45pt;
+	font-size:16.0pt;
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:21.25pt;
+	font-size:11.0pt;
+	font-family:"Times New Roman","serif";}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.a
+	{mso-style-name:"Название Знак";
+	mso-style-link:Название;
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=RU>
+
+<div class=WordSection1>
+
+<h1 align=center style='margin-top:0cm;text-align:center'>Лабораторная работа</h1>
+
+<h1 align=center style='margin-top:0cm;text-align:center'>Структурное
+тестирование</h1>
+
+<p class=MsoListNumber style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt;text-indent:0cm'>&nbsp;</p>
+
+<p class=MsoNormal><b>Цель:</b> приобретение практических навыков тестирования
+приложений с помощью структурного тестирования, а также приобретение навыков
+разработки тестовых вариантов.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Структурное тестирование называют также тестированием по
+«маршрутам», так как в этом случае тестовые наборы формируют путем анализа
+маршрутов, предусмотренных алгоритмом. Под маршрутами при этом понимают
+последовательности операторов программы, которые выполняются при конкретном
+варианте исходных данных. </p>
+
+<p class=MsoNormal>В основе структурного тестирования лежит концепция
+максимально полного тестирования всех маршрутов программы. Так, если алгоритм
+программы включает ветвление, то при одном наборе исходных данных может быть
+выполнена последовательность операторов, реализующая действия, которые
+предусматривает одна ветвь, а при втором - другая. Соответственно, для
+программы будут существовать маршруты, различающиеся выбранным при ветвлении
+вариантом. </p>
+
+<p class=MsoNormal>Считают, что программа проверена полностью, если с помощью
+тестов удается осуществить выполнение программы по всем возможным маршрутам
+передач управления. Однако нетрудно видеть, что даже в программе среднего
+уровня сложности число неповторяющихся маршрутов может быть очень велико, и,
+следовательно, полное или исчерпывающее тестирование маршрутов, как правило,
+невозможно.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Общее задание</b></p>
+
+<p class=MsoNormal>Разработать тестовые варианты для предложенного фрагмента
+кода.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Образец разработки тестовых вариантов</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>В качестве примера возьмем программу нахождения введенного с
+клавиатуры числа <span lang=EN-US>Key</span> среди элементов массива <span
+lang=EN-US>M</span> размерности <span lang=EN-US>N</span> с возвращением его
+индекса <span lang=EN-US>I</span>:</p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><img
+width=646 height=240 id="Рисунок 1" src="Lab2.files/image001.jpg"></p>
+
+<p class=MsoNormal>Структурное тестирование по способу тестирование базового
+пути основывается на построении и анализе путей потокового графа.</p>
+
+<p class=MsoNormal><i>&nbsp;</i></p>
+
+<p class=MsoTitle align=left style='text-align:left'>Построение потокового
+графа</p>
+
+<p class=MsoNormal>Построение потокового графа на основе текста программы:</p>
+
+<p class=MsoNormal>Нумеруются операторы текста, номера показаны в тексте
+программы. К операторам текста относятся, начала и окончания условий, а также
+операторы действий. После чего строится потоковый граф:</p>
+
+<p class=MsoBodyText align=center style='text-align:center;text-indent:0cm'><img
+width=414 height=201 src="Lab2.files/image002.jpg"></p>
+
+<p class=MsoTitle style='text-align:justify'>Определение цикломатической
+сложности</p>
+
+<p class=MsoNormal>Определяем цикломатическую сложность <span lang=EN-US>V</span>(<span
+lang=EN-US>G</span>) потокового графа:</p>
+
+<p class=MsoNormal>В начале, считается количество дуг и узлов. Каждая вершина
+графа является узлом, а линии соединяющие узлы – ребра. После чего считаем </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>12 дуг – 10 узлов+2=4;</p>
+
+<p class=MsoNormal style='text-indent:0cm'>         </p>
+
+<p class=MsoNormal style='text-indent:0cm'>Далее посчитаем количество
+предикатных узлов, то есть количество узлов, которые содержат условия. В данном
+случае это узлы 2 и 6, так как они содержат условие цикла, и 7, так как в нем
+находится условие ЕСЛИ. После нахождения всех узлов высчитаем по формуле:</p>
+
+<p class=MsoNormal style='text-indent:35.4pt'><span lang=EN-US>f</span> =
+количество предикатных узлов + 1. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>3 предикатных узла + 1=4;</p>
+
+<p class=MsoNormal style='text-indent:0cm'><span lang=EN-US>         </span></p>
+
+<p class=MsoNormal style='text-indent:35.4pt'>Определяем регионы потокового
+графа. Регион  - замкнутая область потокового графа.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Потоковый граф имеет 4 региона: <span lang=EN-US>R</span>1, <span
+lang=EN-US>R</span>2, <span lang=EN-US>R</span>3, <span lang=EN-US>R</span>4;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Так как три различных способа определения цикломатической
+сложности показали одинаковое значение, значит существует четыре независимых
+пути для данного потокового графа.</p>
+
+<p class=MsoBodyText style='text-indent:0cm'>&nbsp;</p>
+
+<p class=MsoTitle style='text-align:justify'>Определение базового множества
+независимых линейных путей</p>
+
+<p class=MsoNormal>Независимым называют любой путь, который вводит новый
+оператор обработки или условие. В терминах потокового графа независимый путь
+должен содержать дугу, не входящую в ранее определенные пути.</p>
+
+<p class=MsoNormal>Путь начинается в начальном узле, а заканчивается в конечном
+узле графа. Независимые пути формируются в порядке от самого короткого к самому
+длинному.</p>
+
+<p class=MsoNormal>Каждый новый путь включает новую дугу. Все независимые пути
+графа образуют базовое множество.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Определяем самый короткий путь. Из первого узла имеется
+переход только во второй узел. Из второго узла есть несколько путей в узел 3 и
+в узел 5. Так как узел 5 ближе к последнему узлу, то следует взять такие
+входные данные, при которых условие в узле 2 будет выполнено, так чтобы перейти
+в узел 5. Далее переход в узел 6, в котором аналогично узлу 2 подбираем входные
+параметры, при которых условие будет выполнено так, чтобы перейти в узел 10. На
+этом путь закончен.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Путь 1:</b> 1-2-5-6-10;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Определяем следующий путь. Для этого пройдем до 6 узла, так
+же как в предыдущем пути. Далее пройдем к 7 узлу. В данном случае есть два
+пути, выберем самый длинный через 8 до 9. После чего вернемся в узел 6, а из него
+до 10.</p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>Путь 2:</b> 1-2-5-6-7-8-9-6-10;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Для определения следующего пути необходимо захватить путь
+через узлы 3 и 4, так как они не были в предыдущих путях. После завершения
+отрезка 1-2-3-4-2-5-6, перейдем к узлу 7, а из него перейдем сразу к узлу 9,
+так как эта дуга не будет захвачена последующим путем.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Путь 3:</b> 1-2-3-4-2-5-6-7-9-6-10;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Далее находим самый длинный путь. В данном случае необходимо
+подобрать путь, который будет проходить через все узлы графа.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Путь 4:</b> 1-2-3-4-2-5-6-7-8-9-6-10;</p>
+
+<p class=MsoBodyText>&nbsp;</p>
+
+<p class=MsoTitle style='text-align:justify'>Подготовка тестовых вариантов</p>
+
+<p class=MsoNormal>На данном этапе подготавливаются тестовые варианты, которые
+обеспечат такие результаты условий, при которых будут пройдены все 4 пути,
+найденные в предыдущем этапе.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Тестовый вариант№1</b>:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Для того чтобы условие цикла <span lang=EN-US>i</span>&lt;<span
+lang=EN-US>N</span> было неверным, необходимо, чтобы переменная <span
+lang=EN-US>i</span>, которая равна0, была больше, чем <span lang=EN-US>N</span>,
+в данном случае подбираем самое наибольшее из целочисленных значений меньше 0.
+Так как оба цикла имеют одно и тоже условие, то оба цикла будут игнорироваться.
+Следовательно сравнение <span lang=EN-US>Key</span> проходит в циклах, то
+следовательно, можно выбрать любое значение переменной <span lang=EN-US>Key</span>,
+так как она не будет сравнена. Результат теста будет отрицательный, то есть <span
+lang=EN-US>I=0</span>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Идентификатор:</b> <span lang=EN-US>N</span>= -1, <span
+lang=EN-US>Key</span>=любое; <b>Ожидаемый результат: </b><span lang=EN-US>I</span>=0.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Тестовый вариант№2</b>:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Для того чтобы условие цикла <span lang=EN-US>i</span>&lt;<span
+lang=EN-US>N</span> было не верным, необходимо, чтобы переменная <span
+lang=EN-US>i</span>, которая равна 0, была меньше или равна <span lang=EN-US>N</span>.
+В данном случае подбираем самое наименьшее из целочисленных значений меньше 0.
+Так как оба цикла имеют одно и тоже условие, то оба цикла будут проигнорированы.
+Так как мы знаем значение <span lang=EN-US>M</span>[<span lang=EN-US>i</span>],
+то для того, чтобы тест прошел необходимо чтобы <span lang=EN-US>Key</span>
+была равна <span lang=EN-US>M</span>[<span lang=EN-US>i</span>]. Но результат
+теста будет отрицательный, то есть <span lang=EN-US>I</span>=0, так как второй
+цикл не пройдет, потому что значение <span lang=EN-US>N</span> не даст пройти
+обоим циклам.</p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>Идентификатор:</b> <span lang=EN-US>N</span>=0, <span
+lang=EN-US>Key</span>=<span lang=EN-US>M</span>[1];         <b>Ожидаемый
+результат: </b><span lang=EN-US>I</span>=0;</p>
+
+<p class=MsoNormal style='text-indent:0cm'><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>Тестовый вариант№3</b>:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Для того чтобы условие цикла <span lang=EN-US>i</span>&lt;<span
+lang=EN-US>N</span> было верным, необходимо, чтобы переменная <span lang=EN-US>i</span>,
+которая равна 0, была меньше, чем <span lang=EN-US>N</span>. В данном случае
+подбираем самое наименьшее из целочисленных значений меньше 0. Так как оба
+цикла имеют одно и тоже условие, то оба цикла будут пройдут. Так как мы знаем
+значение <span lang=EN-US>M</span>[<span lang=EN-US>i</span>], то для того,
+чтобы тест не прошел необходимо чтобы <span lang=EN-US>Key</span> была не равна
+<span lang=EN-US>M</span>[<span lang=EN-US>i</span>]. Результат теста будет
+отрицательный, то есть <span lang=EN-US>I</span>=0.</p>
+
+<p class=MsoNormal style='text-indent:0cm'>&nbsp;</p>
+
+<p class=MsoNormal><b>Идентификатор:</b> <span lang=EN-US>N</span>=1, <span
+lang=EN-US>Key</span>&#8800;<span lang=EN-US>M</span>[1]; <b>Ожидаемый
+результат: </b><span lang=EN-US>I</span>=0;</p>
+
+<p class=MsoNormal style='text-indent:0cm'>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Тестовый вариант№4</b>:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Для того чтобы условие цикла <span lang=EN-US>i</span>&lt;<span
+lang=EN-US>N</span> было верным, необходимо, чтобы переменная <span lang=EN-US>i</span>,
+которая равна 0, была меньше, чем <span lang=EN-US>N</span>. В данном случае
+подбираем самое наименьшее из целочисленных значений меньше 0. Так как оба
+цикла имеют одно и тоже условие, то оба цикла будут пройдут. Так как мы знаем
+значение <span lang=EN-US>M</span>[<span lang=EN-US>i</span>], то для
+прохождения теста необходимо чтобы <span lang=EN-US>Key</span> была равна <span
+lang=EN-US>M</span>[<span lang=EN-US>i</span>]. Результат теста будет
+положительный, то есть <span lang=EN-US>I</span>=1.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Идентификатор:</b> <span lang=EN-US>N</span>=1, <span
+lang=EN-US>Key</span>=<span lang=EN-US>M</span>[1]; <b>Ожидаемый результат: </b><span
+lang=EN-US>I</span>=1;</p>
+
+<p class=MsoNormal style='text-indent:35.4pt'>&nbsp;</p>
+
+<p class=MsoNormal style='text-indent:35.4pt'>&nbsp;</p>
+
+<b><span style='font-size:16.0pt;font-family:"Cambria","serif"'><br clear=all
+style='page-break-before:always'>
+</span></b>
+
+<p class=MsoTitle style='text-align:justify'>Контрольное задание</p>
+
+<p class=MsoNormal style='text-indent:35.4pt'>Самостоятельно откройте тестовое
+приложение соответствующее вашему варианту и создайте и проведите структурное
+тестирование приложения. Полученные данные занесите в отчет о тестировании.</p>
+
+<h1 align=center style='text-align:center'>&nbsp;</h1>
+
+<h1 align=center style='text-align:center'>Требования к отчету о структурном
+тестировании</h1>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Указание
+название и функций тестируемого приложения.</p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Предоставление
+кода тестируемого метода.</p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Наличие
+изображения потокового графа.</p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Наличие
+цикломатической сложности потокового графа.</p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Наличие
+определенного базового множества независимых линейных путей.</p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Заполненная
+таблица для тестовых вариантов.</p>
+
+<p class=MsoNormal><b><span style='font-size:11.0pt'>&nbsp;</span></b></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=106 valign=top style='width:79.75pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0cm'>Значение переменной <span
+  lang=EN-US>N<sub>1</sub></span></p>
+  </td>
+  <td width=106 valign=top style='width:79.75pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0cm'><span lang=EN-US>…</span></p>
+  </td>
+  <td width=106 valign=top style='width:79.75pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0cm'>Значение переменной <span
+  lang=EN-US>N<sub>i</sub></span></p>
+  </td>
+  <td width=106 valign=top style='width:79.75pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0cm'>Эталонный вариант</p>
+  </td>
+  <td width=106 valign=top style='width:79.75pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0cm'>Полученный результат</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=106 valign=top style='width:79.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0cm'>&nbsp;</p>
+  </td>
+  <td width=106 valign=top style='width:79.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0cm'>&nbsp;</p>
+  </td>
+  <td width=106 valign=top style='width:79.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0cm'>&nbsp;</p>
+  </td>
+  <td width=106 valign=top style='width:79.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0cm'>&nbsp;</p>
+  </td>
+  <td width=106 valign=top style='width:79.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0cm'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='text-indent:0cm'>Вывод:____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+
+</div>
+
+</body>
+
+</html>
